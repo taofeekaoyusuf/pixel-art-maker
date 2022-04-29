@@ -10,11 +10,9 @@ const color_click = (cc) => {
     cc.target.style.backgroundColor = c_color;
   }
 }
-
 // Select size input
 const width = document.querySelector('#inputWidth');
 const height = document.querySelector('#inputHeight');
-
 let grid_width = width.value
 let grid_height = height.value
 
@@ -57,4 +55,5 @@ function makeGrid(occurrence) {
     // add the row to the end of the table body
     grid_table.appendChild(row);
   }
+
 }
