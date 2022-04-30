@@ -39,15 +39,11 @@ function makeGrid(occurrence) {
   // get the reference for the body
   let body = document.getElementsByTagName("body")[0];
 
-  // creates a <table> element and a <tbody> element
-  let tbl = document.createElement("table");
-  let tblBody = document.createElement("tbody");
-
   // creating all cells
-  for (var i = 0; i < Number(grid_width); i++) {
+  for (var i = 0; i < grid_width; i++) {
     // creates a table row
     const row = document.createElement("tr");
-    for (let j = 0; j < Number(grid_height); j++) {
+    for (let j = 0; j < grid_height; j++) {
       // the end of the table row
       const cell = document.createElement("td");
       row.appendChild(cell);
