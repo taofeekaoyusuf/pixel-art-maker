@@ -40,10 +40,10 @@ function makeGrid(occurrence) {
   let body = document.getElementsByTagName("body")[0];
 
   // creating all cells
-  for (var i = 0; i < grid_width; i++) {
+  for (var i = 0; i < grid_height; i++) {
     // creates a table row
     const row = document.createElement("tr");
-    for (let j = 0; j < grid_height; j++) {
+    for (let j = 0; j < grid_width; j++) {
       // the end of the table row
       const cell = document.createElement("td");
       row.appendChild(cell);
